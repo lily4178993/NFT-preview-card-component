@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <!---------------- CSS CUSTOM PROPERTIES ------------------>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: hsl(217, 54%, 11%);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .light,
+        .h-light:hover {
+            color: hsl(178, 100%, 50%);
+        }
+
+        .txt-info {
+            color: hsl(215, 51%, 70%);
+        }
+
+        .txt-white {
+            color: hsl(0, 0%, 100%);
+        }
+
+        .txt-big {
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .txt-normal {
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        .txt-small {
+            font-size: .9em;
+            font-weight: 300;
+        }
+
+
+        .card {
+            height: 600px;
+            width: 350px;
+            background: hsl(216, 50%, 16%);
+            border-radius: 1em;
+            margin: 0 0 2em 0;
+            padding: 1.1em;
+            box-shadow: 0px 22px 0px 17px hsl(216deg 57% 11%), 0px 13px 0px 45px hsl(216deg 56% 12%);
+        }
+
+        .card .content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .card .content .picture {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            align-self: center;
+            margin: 0 0 1.5em 0;
+        }
+
+        .card .content .picture img {
+            height: 100%;
+            width: 100%;
+            border-radius: .5em;
+        }
+
+        .card .content .picture::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5em;
+            transition: all .5s;
+        }
+
+        .card .content .picture:hover::before {
+            content: url(images/icon-view.svg);
+            background: hsla(178, 100%, 50%, 0.5);
+        }
+
+        .card .content .statut,
+        .card .content .author {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5em 0;
+        }
+
+        .card .content .statut::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background: hsl(215, 32%, 27%);
+        }
+
+        .card .content .author {
+            height: 20px;
+            width: auto;
+        }
+
+        .card .content .author .avatar {
+            height: 30px;
+            width: 30px;
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 50px;
+            margin: 0 .5em 0 0;
+        }
+
+        .card .content .author .avatar img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .attribution {
+            font-size: .7em;
+            text-shadow: 0px 1px 20px hsl(212deg 33% 84%);
+        }
+    </style>
+    <!---------------- CSS CUSTOM PROPERTIES ---------------->
+</head>
+<!---------------- END HEAD ---------------->
+
+<body>
+    <main>
+        <div class="card">
+            <div class="content">
+                <a href="#" class="picture">
+                    <img src="images/image-equilibrium.jpg" alt="image-equilibrium">
+                </a>
+                <a href="#" class="txt-big txt-white h-light">Equilibrium #3429</a>
+
+                <p class="txt-info">Our Equilibrium collection promotes balance and calm.</p>
+
+                <div class="statut">
+                    <div class="items">
+                        <img src="images/icon-ethereum.svg" alt="icon-ethereum">
+                        <span class="txt-normal light">0.041 ETH</span>
+                    </div>
+                    <div class="items">
+                        <img src="images/icon-clock.svg" alt="icon-ethereum">
+                        <span class="txt-normal txt-info">3 days left</span>
+                    </div>
+                </div>
+
+                <div class="author">
+                    <div class="avatar">
+                        <img src="images/image-avatar.png" alt="avatar">
+                    </div>
+                    <span class="txt-small txt-info">Creation of <a href="#" class="txt-small txt-white h-light">Jules
+                            Wyvern</a></span>
+                </div>
+            </div>
+        </div>
+        <!---------------- END CARD ---------------->
+        <div class="attribution txt-small txt-info">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                class="txt-small txt-info h-light">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/lily4178993/" class="txt-small txt-info h-light">Telli Nelly</a>.
+        </div>
+    </main>
+    <!---------------- END MAIN---------------->
+</body>
+
+</html>
