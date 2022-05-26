@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop-preview]()
-![mobile-preview]()
+![desktop-preview](https://github.com/lily4178993/NFT-preview-card-component/blob/main/design/desktop-preview.jpeg)
+![mobile-preview](https://github.com/lily4178993/NFT-preview-card-component/blob/main/design/mobile-preview.jpeg)
 
 
 ### Links
