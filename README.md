@@ -1,4 +1,5 @@
 # NFT-preview-card-component
+This challenge is to build out this preview card component and get it looking as close to the design as possible. Users should be able to: - View the optimal layout depending on their device's screen size - See hover states for interactive elements.
 
 This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help to improve your coding skills by building realistic projects. 
 
@@ -10,16 +11,10 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
 
 ### Screenshot
 
